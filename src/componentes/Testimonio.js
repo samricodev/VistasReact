@@ -1,18 +1,17 @@
-import React from "react";
 import '../css/Testimonio.css'
 
-function Testimonio(){
+function Testimonio(props){
   return(
     <div className="contenedor-t">
       <img 
         className="img-t"
-        src={ require('../imagenes/people1.jpg')}
-        alt="persona 1"
+        src={ require(`../imagenes/testimonio-${props.imagen}.png`)}
+        alt={`foto de ${props.imagen}`}
       />
-      <div>
-        <p className="nombre-t">Samuel</p>
-        <p className="cargo-t">Ing en Software en Spotify</p>
-        <p className="texto-t">lorem lorem fsedufh sdfhs dfjusdhfusdhf jusdhfsjehfsjufh sdujfhsfhsefhusefukghrfuiyhzsfuerhg ufh</p>
+      <div className="contenedor-txt-t">
+        <p className="nombre-t"><strong>{props.nombre}</strong> en {props.pais}</p>
+        <p className="cargo-t">{props.cargo} en <strong>{props.empresa}</strong></p>
+        <p className="texto-t">{props.testimonio}</p>
       </div>
     </div>
   );
