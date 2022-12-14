@@ -1,9 +1,11 @@
 import './App.css';
 import Testimonio from './componentes/Testimonio.js';
+import Header from './componentes/Header.js';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <div className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos</h1>
         <Testimonio 

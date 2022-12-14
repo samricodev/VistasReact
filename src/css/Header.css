@@ -1,0 +1,40 @@
+header{
+    background-color: rgba(0,0,0,0.91);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    color: #fff ;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2{
+    font-family: Lato, sans-serif;
+}
+
+nav h2:hover{
+    cursor: pointer;
+    color: rgba(230, 160, 30, 0.91);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 1rem;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgba(230, 160, 30, 0.91);
+}
